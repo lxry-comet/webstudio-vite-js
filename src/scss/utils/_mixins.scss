@@ -1,0 +1,39 @@
+@mixin media($breakpoint){
+    @if $breakpoint == 'mobile'{
+        @media screen and (max-width: 480px){
+            @content;
+        }
+    }
+    @else if $breakpoint == 'tablet'{
+        @media screen and (max-width: 780px){
+            @content;
+        }
+    }
+    @if $breakpoint == 'desktop'{
+        @media screen and (max-width: 1200px){
+            @content;
+        }
+    }
+}
+@mixin secTitle{
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: map-get($colors, 'color-text-p');
+}
+@mixin flex($property: row, $center:false, $between: false) {
+    display: flex;
+    @if $property == row{
+        flex-direction: row;
+    }@else if $property == col {
+        flex-direction: column;
+    }@if $center == true{
+        justify-content: center;
+    }@if $between == true{
+        justify-content: space-between;
+    }
+}
+@mixin portfolioCards{
+
+}

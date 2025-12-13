@@ -1,0 +1,181 @@
+.portfolio{
+    padding-top: 94px;
+    padding-bottom: 94px;
+    
+    .portfolio__title{
+        font-family: getFont('font-family-logo'), sans-serif;
+        color: map-get($colors, 'color-text-p');
+        margin-bottom: 32px;
+        text-align: center;
+    }
+
+    .portfolio__buttons {
+        // @extend %FLXJSTFcntr;
+        display: flex;
+        align-items: left;
+        flex-wrap: wrap;
+        gap: 8px;
+        padding-bottom: 50px;
+
+    }
+    @media screen and (min-width:768px){
+        .portfolio__buttons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding-bottom: 50px;
+        }
+    }
+    .portfoliio__list {
+        @extend %FLXJSTFcntr;
+        padding-bottom: 16px;
+        margin-bottom: 38px;
+    }
+
+    .portfolio__item {
+        font-family: getFont('font-family-roboto'), sans-serif;
+        font-size: 16px;
+        width: 73px;
+        height: 38px;
+        background-color: map-get($colors, 'color-background-section-team');
+        color: map-get($colors, 'color-logo-studio');
+        border-radius: 4px;
+        margin: 8px;
+        /* box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); */
+
+        &:hover {
+            box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+            background: map-get($colors, 'color-white');
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-delay: 0;
+        }
+    }
+}
+
+.portfolio__button--all, .portfolio__button--website, .portfolio__button--app, .portfolio__button--design, .portfolio__button--marketing{
+    font-family: getFont('font-family-roboto'), sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 162%;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: map-get($colors, 'color-logo-studio');
+    background-color: map-get( $colors, 'color-background-section-team)');
+    border-radius: 4px;
+    border: none;
+    padding: 6px 25px;
+    margin-right: 8px;
+
+    &:active {
+        color: map-get($colors, 'color-white');
+        background-color: map-get($colors, 'color-active');
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 3px 1px 0 rgba(0, 0, 0, 0.1);
+    }
+}
+
+.portfolio__projects {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .portfolio__project-item {
+        width: 370px;
+
+        &:hover {
+            box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+            background: map-get($colors, 'color-white');
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-delay: 0;
+        }
+
+        .portfolio__project-title {
+            font-family: getFont('font-family-roboto'), sans-serif;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 32px;
+            letter-spacing: 0.06em;
+            color: map-get($colors, 'color-text-p');
+            margin-bottom: 4px;
+        }
+
+        .portfolio__project-text {
+            font-family: getFont('font-family-roboto'), sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 187%;
+            letter-spacing: 0.03em;
+            color: map-get($colors, 'color-adresses');
+        }
+
+        .portfolio__project-description{
+            padding: 20px 24px;
+            border-right: 1px solid map-get($colors, 'color-portfolio-cards');;
+            border-left: 1px solid map-get($colors, 'color-portfolio-cards');;
+            border-bottom: 1px solid map-get($colors, 'color-portfolio-cards');;
+        }
+    }
+}
+
+.portfolio__image-container{
+    position: relative;
+    width: 370px;
+    height: 294px;
+    overflow: hidden;
+
+    &:hover .portfolio__overlay{
+        transform: translateY(0);
+    }
+
+    .portfolio__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(33, 150, 243, 0.9);
+        transform: translateY(100%);
+        transition: transform 250ms ease-in-out;
+        padding: 63px 24px;
+        z-index: 1;
+
+        .portfolio__overlay-text {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 156%;
+            letter-spacing: 0.03em;
+            width: 322px;
+            color: map-get($colors, 'color-white');
+        }
+    }
+}
+
+.portfolio__image--techno-kryak {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; /* забезпечує, що зображення буде під overlay */
+}
+
+.display-title {
+    display: none;
+}
+@media screen and (max-width:320px){
+    .portfolio{
+        &__project-item {
+            width: 320px;
+        }
+        &__image-container{
+            position: relative;
+            width: 320px;
+            height: 294px;
+        }
+        &__buttons {
+            margin-left: 20px;
+            padding-bottom: 50px;
+        }
+    }
+}

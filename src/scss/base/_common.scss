@@ -1,0 +1,10 @@
+*, *::before, *::after{
+	box-sizing: inherit;
+	box-sizing: border-box;
+}
+body{
+	font-family: getFont('font-family-roboto') , sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}

@@ -1,0 +1,251 @@
+.backdrop {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	text-transform:none;
+	opacity: 1;
+	transition: opacity 300ms ease-in-out;
+
+	&__modal--hidden .modal {
+		transform: translate(-50%, -50%) scale(0);
+		opacity: 0;
+	}
+	&__modal--hidden{
+		opacity: 0;
+		pointer-events: none;
+		transition: opacity 300ms ease-in-out;
+	}
+
+	.no-scroll {
+		overflow: hidden;
+	}
+}
+	.modal {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 528px;
+		height: 621px;
+
+		color: map-get($colors, 'color-text-p');
+
+		background-color: map-get($colors, 'color-white');
+		transform: translate(-50%, -50%) scale(1);
+
+		border-radius:4px;
+		box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+
+		transition:
+			transform 300ms cubic-bezier(0.83, -0.08,0.32, 1) 500ms,
+			transform 300ms cubic-bezier(0.83, -0.08,0.32, 1) 500ms;
+	
+		&__close-btn{
+			width: 30px;
+			height: 30px;
+			border-radius: 50px;
+			border: 1px solid map-get($colors, 'color-close-form');
+			background: url(../images/close.svg) no-repeat center;
+			background-size: 11px 11px;
+		}
+		& &__close-btn {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+		}
+		&__form{
+			position: relative;
+			font-size: 12px;
+			margin: 0 40px 0;
+		}
+		&__input--name,
+		&__input--phone,
+		&__input--email{
+			padding-left: 40px;
+		}
+		&__input--name{
+			background: url(../images/user.svg) no-repeat left center;
+			background-position: 15px 14px;
+
+		}
+		&__input--phone{
+			background: url(../images/phone.svg) no-repeat left center;
+			background-position: 15px 14px;
+		}
+		&__input--email{
+			background: url(../images/email.svg) no-repeat left center;
+			background-position: 15px 14px;
+		}
+		&__label--name,
+		&__label--phone,
+		&__label--email,
+		&__label--comment{
+			position: absolute;
+			left: 0;
+			color: map-get($colors, 'color-adresses');
+			letter-spacing: 0.01em;
+			font-weight: 400;
+		}
+		&__textarea--comment{
+			font-family: var(--font-family);
+			font-weight: 400;
+			font-size: 12px;
+			letter-spacing: 0.01em;
+			color: rgba(117, 117, 117, 0.5);
+		}
+		&__text{	
+			margin: 40px 0 12px;
+			letter-spacing: 0.03em;
+			font-size: 20px;
+			font-weight: 700;
+			color: map-get($colors, 'color-text-p');
+		}
+		&__label--checkbox{
+			margin-right: 5px;
+			font-weight: 400;
+			color: map-get($colors, 'color-adresses');
+		}
+		&__link--terms{
+			font-size: 14px;
+			text-decoration: underline;
+			font-weight: 400;
+			color: map-get($colors, 'color-logo-web');
+		}
+
+		&__submit-btn{
+			width: 200px;
+			height: 50px;
+
+			font-weight: 700;
+			font-size: 16px;
+			line-height: 1.5;
+			letter-spacing: 0.06em;
+			text-align: center;
+			background: map-get($colors, 'color-logo-web');
+			color: map-get($colors, 'color-white');
+			border-radius: 4px;
+			border: none;
+			box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+
+			margin-top: 30px;
+		}
+		&__field--checkbox{
+			@extend %FLXJSTFcntr;
+			margin-top: 20px;
+			font-size: 14px;
+			line-height: 171%;
+			letter-spacing: 0.03em;
+			width: 425px;
+		}
+		&__checkbox:focus{
+			border-color: map-get($colors, 'color-portfolio-cards');
+		}
+		&__checkbox{
+			margin-right: 8px;
+			width: 16px;
+			height: 15px;
+			border-color:map-get($colors, 'color-text-p');
+		}
+	}
+	input[type=text] {
+	outline: none;
+	}
+	input[type=tel]:focus {
+		outline: none;
+	}
+	input[type=email]:focus {
+		outline: none;
+	}
+	textarea:focus {
+	outline: none;
+	}
+
+	input[type=text]:focus {
+	border: 2px solid map-get($colors, 'color-active');
+	}
+	input[type=tel]:focus {
+	border: 2px solid map-get($colors, 'color-active');
+	}
+	input[type=email]:focus {
+	border: 2px solid map-get($colors, 'color-active');
+	}
+	textarea:focus {
+	border: 2px solid map-get($colors, 'color-active');
+	}
+	textarea::placeholder {
+		letter-spacing: 0.01em;
+		color: rgba(117, 117, 117, 0.5);
+	}
+	textarea{
+		padding: 12px 16px;
+		width: 448px;
+		height: 120px;
+		border: 1px solid map-get($colors, 'color-close-form');
+		border-radius: 4px;
+		resize: none;
+	}
+	input{
+		width: 448px;
+		height: 40px;
+		margin-top: 4px;
+		margin-bottom: 10px;
+
+		border: 1px solid map-get($colors, 'color-close-form');
+		border-radius: 4px;
+	}
+@media screen and (min-width:768px){
+	.backdrop {
+		height: 100%;
+	}
+	.modal {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 450px;
+		height: 609px;
+		&__input--name,
+		&__input--phone,
+		&__input--email{
+			padding-left: 40px;
+		}
+		&__field--checkbox {
+			font-size: 12px;
+			width: 370px;
+		}
+	}
+	input {
+		width: 340px;
+	}
+	textarea {
+		width: 340px;
+	}
+}
+@media screen and (max-width:767px){
+	.modal {
+		&__text{
+			width: 370px;
+		}
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 450px;
+		height: 609px;
+		&__input--name,
+		&__input--phone,
+		&__input--email{
+			padding-left: 40px;
+		}
+		&__field--checkbox {
+			font-size: 12px;
+			width: 370px;
+		}
+	}
+	input {
+		width: 330px;
+	}
+	textarea {
+		width: 340px;
+	}
+}

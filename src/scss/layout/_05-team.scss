@@ -1,0 +1,81 @@
+.team{
+    background: map-get($colors, 'color-background-section-team');
+    padding-top:94px;
+    padding-bottom: 94px;
+
+    &__title{
+        font-family: getFont('font-family-logo') , sans-serif;
+        font-weight:700;
+        font-size: 36px;
+        margin-bottom:50px;
+        text-align: center;
+    }
+    &__text{
+        font-family: getFont('font-family-roboto') ,sans-serif;
+            
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.03em;
+        color: map-get($colors, 'color-adresses');
+        margin-top:30px;
+        text-align: center;
+    }
+    &__item{
+        background-color: map-get($colors, 'color-white');
+        border-radius: 9px;
+        padding-bottom:30px;
+        width: 270px;
+        box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+        background: map-get($colors, 'color-white');
+    }
+    &__position{
+        background-color: map-get($colors, 'color-white');
+        font-weight: 700;
+        line-height: 1.5;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: map-get($colors, 'color-text-p');
+        text-align: center;
+        margin-top:10px;
+    }
+    &__social-media{
+        @include FLXALGNcntrcntn;
+        // gap: 10px;
+        margin: 0 auto;
+    }
+    &__social-media-link{
+        @include FLXALGNcntrcntn;
+        padding: 12px;
+        // width: 44px;
+        // height: 44px;
+        fill: map-get($colors, 'color-white');
+        background-color: map-get($colors, 'color-bg-svg');
+        border-radius: 100%;
+        margin-top: 16px;
+        fill: map-get($colors, 'color-svg');
+    }
+    &__social-media-link:hover{
+        padding: 12px;
+        // width: 44px;
+        // height: 44px;
+        fill: map-get($colors, 'color-white');
+        background-color: map-get($colors, 'color-active');
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-delay: 0 ;
+    }
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+}
+@media screen and (min-width:768px){
+    .team{
+        // &__item, &__photo{
+        //     width: 354px;
+        // }
+    }
+}

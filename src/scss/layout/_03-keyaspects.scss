@@ -1,0 +1,85 @@
+.keyaspects{
+    margin:60px 0;
+    > .container {
+        @include flex(col, true, false);
+        padding: 0 15px;
+        @include media(desktop){
+            padding:0;
+        }
+    }
+    &__item-title{
+        /* margin-top: 150px; */
+        margin-bottom: 10px;
+    }
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        // @include flex(col, false, false);
+        // gap:30px;
+        // flex-wrap:wrap;
+        // @include media(tablet){
+        //     @include flex(row, false, flase);
+        // }
+        // /* justify-content: space-between; */
+    }
+    // &__items{
+    //     @include flex(col, false, false);
+    //     @include media(tablet){
+    //         flex-basis: calc((100% - 30px)/2)
+    //     }
+    //     @include media(desktop){
+    //         flex-basis: 270px;
+    //     }
+    // }
+    &__image--container{
+        @include FLXALGNcntrcntn;
+        width: 270px;
+        height: 120px;
+        margin-bottom: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 4px;
+        background-color: map-get($colors, 'color-background-section-team');
+    }
+
+    &__items:nth-child(1):before{
+        background-image: url(../images/antenna.png);
+    }
+    &__items:nth-child(2):before{
+        background-image: url(../images/clock.png);
+    }
+    &__items:nth-child(3):before{
+        background-image: url(../images/diagram.png);
+    }
+    &__items:nth-child(4):before{
+        background-image: url(../images/astronaut.png);
+    }
+    &__title{
+        font-family: getFont('font-family-roboto') ,sans-serif;
+        font-weight: 700;
+        line-height: 1.5;
+        letter-spacing: 0.03em;
+        // text-transform: uppercase;
+        color: map-get($colors, 'color-text-p');
+        text-align: center;
+    }
+    &__title{
+        margin-bottom: 50px;
+        display: none;
+    }
+    &__item-text{ //.team-text/*,.project-text*/{
+        font-family: getFont('font-family-roboto') ,sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 171%;
+        letter-spacing: 0.03em;
+        width: 270px;
+        color: map-get($colors, 'color-adresses');
+    }
+}
+@media screen and (min-width:768px){
+    .keyaspects{
+    }
+}
