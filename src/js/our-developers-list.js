@@ -38,21 +38,21 @@ const dataDevelopersList =
 		position: "Frontend Developer",
 		images: {
       desktop: [
-				'./images/olga-d-1x.jpg', 
-				'./images/olga-d-2x.jpg', 
-				'./images/olga-d-3x.jpg'
+				'./images/olha-d-1x.jpg', 
+				'./images/olha-d-2x.jpg', 
+				'./images/olha-d-3x.jpg'
 				],
       tablet: [
-				'./images/olga-t-1x.jpg', 
-				'./images/olga-t-2x.jpg', 
-				'./images/olga-t-3x.jpg'
+				'./images/olha-t-1x.jpg', 
+				'./images/olha-t-2x.jpg', 
+				'./images/olha-t-3x.jpg'
 				],    
       mobile: [
-				'./images/olga-m-1x.jpg', 
-				'./images/olga-m-2x.jpg', 
-				'./images/olga-m-3x.jpg'
+				'./images/olha-m-1x.jpg', 
+				'./images/olha-m-2x.jpg', 
+				'./images/olha-m-3x.jpg'
 					],
-			default: "./images/olga-d-1x.jpg",
+			default: "./images/olha-d-1x.jpg",
       },
 			icons: [
 				"./images/symboldefts.svg#instagram", 
@@ -66,21 +66,21 @@ const dataDevelopersList =
 		position: "Marketing",
 		images: {
       desktop: [
-				'./images/mykola-d-1x.jpg', 
-				'./images/mykola-d-2x.jpg', 
-				'./images/mykola-d-3x.jpg'
+				'./images/micola-d-1x.jpg', 
+				'./images/micola-d-2x.jpg', 
+				'./images/micola-d-3x.jpg'
 				],
       tablet: [
-				'./images/mykola-t-1x.jpg', 
-				'./images/mykola-t-2x.jpg', 
-				'./images/mykola-t-3x.jpg'
+				'./images/micola-t-1x.jpg', 
+				'./images/micola-t-2x.jpg', 
+				'./images/micola-t-3x.jpg'
 				],    
       mobile: [
-				'./images/mykola-m-1x.jpg', 
-				'./images/mykola-m-2x.jpg', 
-				'./images/mykola-m-3x.jpg'
+				'./images/micola-m-1x.jpg', 
+				'./images/micola-m-2x.jpg', 
+				'./images/micola-m-3x.jpg'
 					],
-			default: "./images/mykola-d-1x.jpg",
+			default: "./images/micola-d-1x.jpg",
       },
 			icons: [
 				"./images/symboldefts.svg#instagram", 
@@ -94,19 +94,19 @@ const dataDevelopersList =
 		position: "Ui Designer",
 		images: {
       desktop: [
-				'./images/myhailo-d-1x.jpg', 
-				'./images/myhailo-d-2x.jpg', 
-				'./images/myhailo-d-3x.jpg'
+				'./images/mihailo-d-1x.jpg', 
+				'./images/mihailo-d-2x.jpg', 
+				'./images/mihailo-d-3x.jpg'
 				],
       tablet: [
-				'./images/myhailo-t-1x.jpg', 
-				'./images/myhailo-t-2x.jpg', 
-				'./images/myhailo-t-3x.jpg'
+				'./images/mihailo-t-1x.jpg', 
+				'./images/mihailo-t-2x.jpg', 
+				'./images/mihailo-t-3x.jpg'
 				],    
       mobile: [
-				'./images/myhailo-m-1x.jpg', 
-				'./images/myhailo-m-2x.jpg', 
-				'./images/myhailo-m-3x.jpg'
+				'./images/mihailo-m-1x.jpg', 
+				'./images/mihailo-m-2x.jpg', 
+				'./images/mihailo-m-3x.jpg'
 					],
 			default: "./images/myhilo-d-1x.jpg",
       },
