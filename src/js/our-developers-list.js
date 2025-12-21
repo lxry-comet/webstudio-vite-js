@@ -3,7 +3,18 @@ console.log(
     'color: white; background-color: #D33F49',
 );
 
-const dataDevelopersList = 
+//![3] 
+//* Створюємо масив об'єктів з даними розробників
+//![4] 
+//* Створюємо масив об'єктів з даними розробників
+//![5] 
+//* Створюємо масив об'єктів з даними розробників
+//![6] 
+//* Створюємо масив об'єктів з даними розробників
+
+//![1] 
+//* Створюємо дефолтний список розробників (4 особи)
+let dataDevelopersList = 
 [
 	{
     name: "Ігор Дем'яненко",
@@ -121,6 +132,26 @@ const dataDevelopersList =
 // console.log("dataDevelopersList:", dataDevelopersList[0].images.tablet[1]);
 const developersList = document.querySelector('.team__list');
 
+
+//![2] 
+//* Перевірити на наяівність списку розробників у LocalStorage developerList 
+
+if(localStorage.getItem('dataDevelopers'))
+{
+//? якщо данні є то ми їх забираємо з LocalStorage у dataDevelopersList
+	dataDevelopersList = JSON.parse(localStorage.getItem('dataDevelopers'));
+
+	console.log("Дані списку розробників взяті з LocalStorage", dataDevelopersList);
+}else{
+	console.log("Створюємо дефолтний список розробників");
+	// const jsonDataDevelopersList = ;
+	localStorage.setItem('dataDevelopers', JSON.stringify(dataDevelopersList))
+}
+
+
+
+// console.log('JSON-дані списку розробників:', jsonDataDevelopersList);
+
 const markup = dataDevelopersList.map(item =>
 	 `<li class="team__item">
 							<picture>
@@ -181,6 +212,8 @@ const markup = dataDevelopersList.map(item =>
 					</li>`
 				).join('');
 developersList.innerHTML = markup;
+
+
 
 console.log('Наші розробники:', dataDevelopersList);
 
