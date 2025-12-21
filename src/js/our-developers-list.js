@@ -12,6 +12,8 @@ console.log(
 //![6] 
 //* Створюємо масив об'єктів з даними розробників
 
+
+
 //![1] 
 //* Створюємо дефолтний список розробників (4 особи)
 let dataDevelopersList = 
@@ -21,27 +23,27 @@ let dataDevelopersList =
 		position: "Product Designer",
 		images: {
       desktop: [
-				'./images/igor-d-1x.jpg', 
-				'./images/igor-d-2x.jpg', 
-				'./images/igor-d-3x.jpg'
+				new URL('../images/igor-d-1x.jpg', import.meta.url).href, 
+				new URL('../images/igor-d-2x.jpg', import.meta.url).href, 
+				new URL('../images/igor-d-3x.jpg', import.meta.url).href
 				],
       tablet: [
-				'./images/igor-t-1x.jpg', 
-				'./images/igor-t-2x.jpg', 
-				'./images/igor-t-3x.jpg'
+				new URL('../images/igor-t-1x.jpg', import.meta.url).href, 
+				new URL('../images/igor-t-2x.jpg', import.meta.url).href, 
+				new URL('../images/igor-t-3x.jpg', import.meta.url).href
 				],    
       mobile: [
-				'./images/igor-m-1x.jpg', 
-				'./images/igor-m-2x.jpg', 
-				'./images/igor-m-3x.jpg'
+				new URL('../images/igor-m-1x.jpg', import.meta.url).href, 
+				new URL('../images/igor-m-2x.jpg', import.meta.url).href, 
+				new URL('../images/igor-m-3x.jpg', import.meta.url).href
 					],
-			default: "./images/igor-d-1x.jpg",
+			default: new URL('../images/igor-d-1x.jpg', import.meta.url).href,
       },
 			icons: [
-				"./images/symboldefts.svg#instagram", 
-				"./images/symboldefts.svg#twitter", 
-				"./images/symboldefts.svg#facebook",
-				"./images/symboldefts.svg#linkedin"
+				new URL('../images/symbol-defs.svg#instagram', import.meta.url).href, 
+				new URL('../images/symbol-defs.svg#twitter', import.meta.url).href, 
+				new URL('../images/symbol-defs.svg#facebook', import.meta.url).href,
+				new URL('../images/symbol-defs.svg#linkedin', import.meta.url).href
 			]
 	},
 	{
@@ -49,27 +51,27 @@ let dataDevelopersList =
 		position: "Frontend Developer",
 		images: {
       desktop: [
-				'./images/olha-d-1x.jpg', 
-				'./images/olha-d-2x.jpg', 
-				'./images/olha-d-3x.jpg'
+				new URL('../images/olha-d-1x.jpg', import.meta.url).href, 
+				new URL('../images/olha-d-2x.jpg', import.meta.url).href, 
+				new URL('../images/olha-d-3x.jpg', import.meta.url).href
 				],
       tablet: [
-				'./images/olha-t-1x.jpg', 
-				'./images/olha-t-2x.jpg', 
-				'./images/olha-t-3x.jpg'
+				new URL('../images/olha-t-1x.jpg', import.meta.url).href, 
+				new URL('../images/olha-t-2x.jpg', import.meta.url).href, 
+				new URL('./images/olha-t-3x.jpg', import.meta.url).href
 				],    
       mobile: [
-				'./images/olha-m-1x.jpg', 
-				'./images/olha-m-2x.jpg', 
-				'./images/olha-m-3x.jpg'
+				new URL('../images/olha-m-1x.jpg', import.meta.url).href, 
+				new URL('../images/olha-m-2x.jpg', import.meta.url).href, 
+				new URL('../images/olha-m-3x.jpg', import.meta.url).href
 					],
-			default: "./images/olha-d-1x.jpg",
+			default: new URL('../images/olha-d-1x.jpg', import.meta.url).href,
       },
 			icons: [
-				"./images/symboldefts.svg#instagram", 
-				"./images/symboldefts.svg#twitter", 
-				"./images/symboldefts.svg#facebook",
-				"./images/symboldefts.svg#linkedin"
+				new URL('../images/symbol-defs.svg#instagram', import.meta.url).href, 
+				new URL('../images/symbol-defs.svg#twitter', import.meta.url).href, 
+				new URL('../images/symbol-defs.svg#facebook', import.meta.url).href,
+				new URL('../images/symbol-defs.svg#linkedin', import.meta.url).href
 			]
 	},
 	{
@@ -77,27 +79,27 @@ let dataDevelopersList =
 		position: "Marketing",
 		images: {
       desktop: [
-				'./images/micola-d-1x.jpg', 
-				'./images/micola-d-2x.jpg', 
-				'./images/micola-d-3x.jpg'
+				new URL('../images/micola-d-1x.jpg', import.meta.url).href, 
+				new URL('../images/micola-d-2x.jpg', import.meta.url).href, 
+				new URL('../images/micola-d-3x.jpg', import.meta.url).href
 				],
       tablet: [
-				'./images/micola-t-1x.jpg', 
-				'./images/micola-t-2x.jpg', 
-				'./images/micola-t-3x.jpg'
+				new URL('../images/micola-t-1x.jpg', import.meta.url).href, 
+				new URL('../images/micola-t-2x.jpg', import.meta.url).href, 
+				new URL('../images/micola-t-3x.jpg', import.meta.url).href
 				],    
       mobile: [
-				'./images/micola-m-1x.jpg', 
-				'./images/micola-m-2x.jpg', 
-				'./images/micola-m-3x.jpg'
+				new URL('../images/micola-m-1x.jpg', import.meta.url).href, 
+				new URL('../images/micola-m-2x.jpg', import.meta.url).href, 
+				new URL('../images/micola-m-3x.jpg', import.meta.url).href
 					],
-			default: "./images/micola-d-1x.jpg",
+			default: new URL('../images/micola-d-1x.jpg', import.meta.url).href,
       },
 			icons: [
-				"./images/symboldefts.svg#instagram", 
-				"./images/symboldefts.svg#twitter", 
-				"./images/symboldefts.svg#facebook",
-				"./images/symboldefts.svg#linkedin"
+				new URL('../images/symbol-defs.svg#instagram', import.meta.url).href, 
+				new URL('../images/symbol-defs.svg#twitter', import.meta.url).href, 
+				new URL('../images/symbol-defs.svg#facebook', import.meta.url).href,
+				new URL('../images/symbol-defs.svg#linkedin', import.meta.url).href
 			]
 	},
 	{
@@ -105,27 +107,27 @@ let dataDevelopersList =
 		position: "Ui Designer",
 		images: {
       desktop: [
-				'./images/mihailo-d-1x.jpg', 
-				'./images/mihailo-d-2x.jpg', 
-				'./images/mihailo-d-3x.jpg'
+				new URL('../images/mihailo-d-1x.jpg', import.meta.url).href, 
+				new URL('../images/mihailo-d-2x.jpg', import.meta.url).href, 
+				new URL('../images/mihailo-d-3x.jpg', import.meta.url).href
 				],
       tablet: [
-				'./images/mihailo-t-1x.jpg', 
-				'./images/mihailo-t-2x.jpg', 
-				'./images/mihailo-t-3x.jpg'
+				new URL('../images/mihailo-t-1x.jpg', import.meta.url).href, 
+				new URL('../images/mihailo-t-2x.jpg', import.meta.url).href, 
+				new URL('../images/mihailo-t-3x.jpg', import.meta.url).href
 				],    
       mobile: [
-				'./images/mihailo-m-1x.jpg', 
-				'./images/mihailo-m-2x.jpg', 
-				'./images/mihailo-m-3x.jpg'
+				new URL('../images/mihailo-m-1x.jpg', import.meta.url).href, 
+				new URL('../images/mihailo-m-2x.jpg', import.meta.url).href, 
+				new URL('../images/mihailo-m-3x.jpg', import.meta.url).href
 					],
-			default: "./images/myhilo-d-1x.jpg",
+			default: new URL('../images/mihailo-d-1x.jpg', import.meta.url).href,
       },
 			icons: [
-				"./images/symboldefts.svg#instagram", 
-				"./images/symboldefts.svg#twitter", 
-				"./images/symboldefts.svg#facebook",
-				"./images/symboldefts.svg#linkedin"
+				new URL('../images/symbol-defs.svg#instagram', import.meta.url).href, 
+				new URL('../images/symbol-defs.svg#twitter', import.meta.url).href, 
+				new URL('../images/symbol-defs.svg#facebook', import.meta.url).href,
+				new URL('../images/symbol-defs.svg#linkedin', import.meta.url).href
 			]
 	}
 ];
@@ -147,8 +149,6 @@ if(localStorage.getItem('dataDevelopers'))
 	// const jsonDataDevelopersList = ;
 	localStorage.setItem('dataDevelopers', JSON.stringify(dataDevelopersList))
 }
-
-
 
 // console.log('JSON-дані списку розробників:', jsonDataDevelopersList);
 
