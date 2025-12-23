@@ -3,6 +3,9 @@ console.log(
     'color: white; background-color: #D33F49',
 );
 
+import Handlebars from 'handlebars';
+import developerTemplate from '../templates/our-developers-list.hbs?raw';
+
 //![3] 
 //* Створюємо масив об'єктів з даними розробників
 //![4] 
@@ -152,68 +155,74 @@ if(localStorage.getItem('dataDevelopers'))
 
 // console.log('JSON-дані списку розробників:', jsonDataDevelopersList);
 
-const markup = dataDevelopersList.map(item =>
-	 `<li class="team__item">
-							<picture>
-								<source
-                  srcset="
-                    ${item.images.desktop[0]} 1x,
-                    ${item.images.desktop[1]} 2x,
-                    ${item.images.desktop[2]} 3x
-                  "
-                  media="(min-width: 1200px)"
-                />
-								<source
-									srcset="
-                    ${item.images.tablet[0]} 1x,
-                    ${item.images.tablet[1]} 2x,
-                    ${item.images.tablet[2]} 3x
-									"
-									media="(min-width: 768px)"/>
-								<source
-									srcset="
-                    ${item.images.mobile[0]} 1x,
-                    ${item.images.mobile[1]} 2x,
-                    ${item.images.mobile[2]} 3x
-										"
-										media="(min-width: 480px)"/>
-								<img
-									class="team__photo"
-									src="${item.images.default}"
-									width="270"
-									alt="${item.name}"
-					  		/>
-							</picture>
+//? створення розмітки списку розробників без Handlebars
 
-					  <p class="team__text">${item.name}</p>
-					  <h3 class="team__position">${item.position}</h3>
-					  <div class="team__social-media">
-						<a class="team__social-media-link" href="./">
-						  <svg class="team__social-media-icon" width="20px" height="20px">
-							<use href="${item.icons[0]}"></use>
-						  </svg>
-						</a>
-						<a class="team__social-media-link" href="./">
-						  <svg class="team__social-media-icon" width="20px" height="20px">
-							<use href="${item.icons[1]}"></use>
-						  </svg>
-						</a>
-						<a class="team__social-media-link" href="./">
-						  <svg class="team__social-media-icon" width="20px" height="20px">
-							<use href="${item.icons[2]}"></use>
-						  </svg>
-						</a>
-						<a class="team__social-media-link" href="./">
-						  <svg class="team__social-media-icon" width="20px" height="20px">
-							<use href="${item.icons[3]}"></use>
-						  </svg>
-						</a>
-					  </div>
-					</li>`
-				).join('');
-developersList.innerHTML = markup;
+// const markup = dataDevelopersList.map(item =>
+// 	 `<li class="team__item">
+// 							<picture>
+// 								<source
+//                   srcset="
+//                     ${item.images.desktop[0]} 1x,
+//                     ${item.images.desktop[1]} 2x,
+//                     ${item.images.desktop[2]} 3x
+//                   "
+//                   media="(min-width: 1200px)"
+//                 />
+// 								<source
+// 									srcset="
+//                     ${item.images.tablet[0]} 1x,
+//                     ${item.images.tablet[1]} 2x,
+//                     ${item.images.tablet[2]} 3x
+// 									"
+// 									media="(min-width: 768px)"/>
+// 								<source
+// 									srcset="
+//                     ${item.images.mobile[0]} 1x,
+//                     ${item.images.mobile[1]} 2x,
+//                     ${item.images.mobile[2]} 3x
+// 										"
+// 										media="(min-width: 480px)"/>
+// 								<img
+// 									class="team__photo"
+// 									src="${item.images.default}"
+// 									width="270"
+// 									alt="${item.name}"
+// 					  		/>
+// 							</picture>
 
+// 					  <p class="team__text">${item.name}</p>
+// 					  <h3 class="team__position">${item.position}</h3>
+// 					  <div class="team__social-media">
+// 						<a class="team__social-media-link" href="./">
+// 						  <svg class="team__social-media-icon" width="20px" height="20px">
+// 							<use href="${item.icons[0]}"></use>
+// 						  </svg>
+// 						</a>
+// 						<a class="team__social-media-link" href="./">
+// 						  <svg class="team__social-media-icon" width="20px" height="20px">
+// 							<use href="${item.icons[1]}"></use>
+// 						  </svg>
+// 						</a>
+// 						<a class="team__social-media-link" href="./">
+// 						  <svg class="team__social-media-icon" width="20px" height="20px">
+// 							<use href="${item.icons[2]}"></use>
+// 						  </svg>
+// 						</a>
+// 						<a class="team__social-media-link" href="./">
+// 						  <svg class="team__social-media-icon" width="20px" height="20px">
+// 							<use href="${item.icons[3]}"></use>
+// 						  </svg>
+// 						</a>
+// 					  </div>
+// 					</li>`
+// 				).join('');
+// developersList.innerHTML = markup;
 
+//? створення розмітки списку розробників з Handlebars
+
+const template = Handlebars.compile(developerTemplate);
+
+const markup = dataDevelopersList.map(item => template(item)).join('');
 
 console.log('Наші розробники:', dataDevelopersList);
 

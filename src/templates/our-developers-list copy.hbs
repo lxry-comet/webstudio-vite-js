@@ -1,0 +1,59 @@
+<li class="team__item">
+  <picture>
+    <source
+      srcset="
+                    {{images.desktop[0]}} 1x,
+                    {{images.desktop[1]}} 2x,
+                    {{images.desktop[2]}} 3x
+                  "
+      media="(min-width: 1200px)"
+    />
+    <source
+      srcset="
+                    {{images.tablet[0]}} 1x,
+                    {{images.tablet[1]}} 2x,
+                    {{images.tablet[2]}} 3x
+									"
+      media="(min-width: 768px)"
+    />
+    <source
+      srcset="
+                    {{images.mobile[0]}} 1x,
+                    {{images.mobile[1]}} 2x,
+                    {{images.mobile[2]}} 3x
+										"
+      media="(min-width: 480px)"
+    />
+    <img
+      class="team__photo"
+      src="{{images.default}}"
+      width="270"
+      alt="{{name}}"
+    />
+  </picture>
+
+  <p class="team__text">{{name}}</p>
+  <h3 class="team__position">{{position}}</h3>
+  <div class="team__social-media">
+    <a class="team__social-media-link" href="./">
+      <svg class="team__social-media-icon" width="20px" height="20px">
+        <use href="{{icons[0]}}"></use>
+      </svg>
+    </a>
+    <a class="team__social-media-link" href="./">
+      <svg class="team__social-media-icon" width="20px" height="20px">
+        <use href="{{icons[1]}}"></use>
+      </svg>
+    </a>
+    <a class="team__social-media-link" href="./">
+      <svg class="team__social-media-icon" width="20px" height="20px">
+        <use href="{{icons[2]}}"></use>
+      </svg>
+    </a>
+    <a class="team__social-media-link" href="./">
+      <svg class="team__social-media-icon" width="20px" height="20px">
+        <use href="{{icons[3]}}"></use>
+      </svg>
+    </a>
+  </div>
+</li>ёЁ
