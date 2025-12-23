@@ -5,7 +5,7 @@ console.log(
 
 import Handlebars from 'handlebars';
 import developerTemplate from '../templates/our-developers-list.hbs?raw';
-
+console.log("devTemplate: ", developerTemplate)
 //![3] 
 //* Створюємо масив об'єктів з даними розробників
 //![4] 
@@ -223,6 +223,7 @@ if(localStorage.getItem('dataDevelopers'))
 const template = Handlebars.compile(developerTemplate);
 
 const markup = dataDevelopersList.map(item => template(item)).join('');
+developersList.innerHTML = markup;
 
 console.log('Наші розробники:', dataDevelopersList);
 

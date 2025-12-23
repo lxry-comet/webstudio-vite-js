@@ -30,11 +30,11 @@
 
   <p class="team__text">{{name}}</p>
   <h3 class="team__position">{{position}}</h3>
-  <ul class="team__social-media">
+  <ul class="our-developers-svg-list">
     {{#each icons}}
-    <li>
-      <a class="team__social-media-link" href="./">
-        <svg class="team__social-media-icon" width="20px" height="20px">
+    <li class="our-developers-svg-list__item">
+      <a class="our-developers-svg-list__link" href="#">
+        <svg width="20" height="20">
           <use href="{{this}}"></use>
         </svg>
       </a>
