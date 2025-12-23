@@ -40,10 +40,10 @@ let dataDevelopersList =
 			default: new URL('../images/igor-d-1x.jpg', import.meta.url).href,
       },
 			icons: [
-				new URL('../images/symbol-defs.svg#instagram', import.meta.url).href, 
-				new URL('../images/symbol-defs.svg#twitter', import.meta.url).href, 
-				new URL('../images/symbol-defs.svg#facebook', import.meta.url).href,
-				new URL('../images/symbol-defs.svg#linkedin', import.meta.url).href
+				new URL('../images/symboldefs.svg#instagram', import.meta.url).href, 
+				new URL('../images/symboldefs.svg#twitter', import.meta.url).href, 
+				new URL('../images/symboldefs.svg#facebook', import.meta.url).href,
+				new URL('../images/symboldefs.svg#linkedin', import.meta.url).href
 			]
 	},
 	{
@@ -68,10 +68,10 @@ let dataDevelopersList =
 			default: new URL('../images/olha-d-1x.jpg', import.meta.url).href,
       },
 			icons: [
-				new URL('../images/symbol-defs.svg#instagram', import.meta.url).href, 
-				new URL('../images/symbol-defs.svg#twitter', import.meta.url).href, 
-				new URL('../images/symbol-defs.svg#facebook', import.meta.url).href,
-				new URL('../images/symbol-defs.svg#linkedin', import.meta.url).href
+				new URL('../images/symboldefs.svg#instagram', import.meta.url).href, 
+				new URL('../images/symboldefs.svg#twitter', import.meta.url).href, 
+				new URL('../images/symboldefs.svg#facebook', import.meta.url).href,
+				new URL('../images/symboldefs.svg#linkedin', import.meta.url).href
 			]
 	},
 	{
@@ -96,10 +96,10 @@ let dataDevelopersList =
 			default: new URL('../images/micola-d-1x.jpg', import.meta.url).href,
       },
 			icons: [
-				new URL('../images/symbol-defs.svg#instagram', import.meta.url).href, 
-				new URL('../images/symbol-defs.svg#twitter', import.meta.url).href, 
-				new URL('../images/symbol-defs.svg#facebook', import.meta.url).href,
-				new URL('../images/symbol-defs.svg#linkedin', import.meta.url).href
+				new URL('../images/symboldefs.svg#instagram', import.meta.url).href, 
+				new URL('../images/symboldefs.svg#twitter', import.meta.url).href, 
+				new URL('../images/symboldefs.svg#facebook', import.meta.url).href,
+				new URL('../images/symboldefs.svg#linkedin', import.meta.url).href
 			]
 	},
 	{
@@ -124,10 +124,10 @@ let dataDevelopersList =
 			default: new URL('../images/mihailo-d-1x.jpg', import.meta.url).href,
       },
 			icons: [
-				new URL('../images/symbol-defs.svg#instagram', import.meta.url).href, 
-				new URL('../images/symbol-defs.svg#twitter', import.meta.url).href, 
-				new URL('../images/symbol-defs.svg#facebook', import.meta.url).href,
-				new URL('../images/symbol-defs.svg#linkedin', import.meta.url).href
+				new URL('../images/symboldefs.svg#instagram', import.meta.url).href, 
+				new URL('../images/symboldefs.svg#twitter', import.meta.url).href, 
+				new URL('../images/symboldefs.svg#facebook', import.meta.url).href,
+				new URL('../images/symboldefs.svg#linkedin', import.meta.url).href
 			]
 	}
 ];
