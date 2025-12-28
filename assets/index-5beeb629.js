@@ -38,7 +38,10 @@ Expecting `+E.join(", ")+", got '"+(this.terminals_[b]||b)+"'":U="Parse error on
       media="(min-width: 768px)" 
     />
     <source 
-        srcset="{{images.mobileSrcSet}}" 
+        srcset="
+        {{#each images.mobile}}
+          {{this}}
+        {{/each}}" 
       media="(min-width: 480px)" 
     />
     <img class="team__photo" src="{{images.default}}" alt="{{name}}" />
@@ -49,7 +52,8 @@ Expecting `+E.join(", ")+", got '"+(this.terminals_[b]||b)+"'":U="Parse error on
   <h3 class="team__position">{{position}}</h3>
   <ul class="team__social-media">
     {{#each icons}}
-    <li class="our-developers-svg-list__item">
+    
+    <li class="team__social-media-link">
       <a class="team__social-media-icon" href="#">
         <svg class='team__social-media-icon' width="20" height="20">
           <use href="{{this}}"></use>
