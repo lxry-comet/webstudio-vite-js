@@ -1,0 +1,28 @@
+<li class="workers-list__item">
+  <picture>
+    <source media="(min-width: 1200px)" srcset="{{images.desktopSrcSet}}" />
+    <source media="(min-width: 768px)" srcset="{{images.tabletSrcSet}}" />
+    <source media="(min-width: 480px)" srcset="{{images.mobileSrcSet}}" />
+    <img
+      class="workers-list__img"
+      src="{{images.default}}"
+      srcset="{{images.mobileSrcSet}}"
+      alt="{{name}}"
+    />
+  </picture>
+
+  <p class="workers-list__text">{{name}}</p>
+  <h3 class="workers-list__title">{{profession}}</h3>
+
+  <ul class="workers-list--social-media">
+    {{#each icons}}
+      <li class="workers-list__item--social-media">
+        <a class="workers-list__link" href="#">
+          <svg class="svgs" width="20" height="20">
+            <use href="{{this}}"></use>
+          </svg>
+        </a>
+      </li>
+    {{/each}}
+  </ul>
+</li>

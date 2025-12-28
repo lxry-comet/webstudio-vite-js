@@ -26,20 +26,22 @@ let dataDevelopersList =
 		position: "Product Designer",
 		images: {
       desktop: [
-				new URL('../images/igor-d-1x.jpg', import.meta.url).href, 
-				new URL('../images/igor-d-2x.jpg', import.meta.url).href, 
-				new URL('../images/igor-d-3x.jpg', import.meta.url).href
+				new URL('../images/igor-d-1x.jpg', import.meta.url).href  + ' 1x', 
+				new URL('../images/igor-d-2x.jpg', import.meta.url).href  + ' 2x', 
+				new URL('../images/igor-d-3x.jpg', import.meta.url).href  + ' 3x'
 				],
       tablet: [
-				new URL('../images/igor-t-1x.jpg', import.meta.url).href, 
-				new URL('../images/igor-t-2x.jpg', import.meta.url).href, 
-				new URL('../images/igor-t-3x.jpg', import.meta.url).href
+				//* ./images/igor-t-1x.jpg 1x,
+				new URL('../images/igor-t-1x.jpg', import.meta.url).href + ' 1x', 
+				new URL('../images/igor-t-2x.jpg', import.meta.url).href + ' 2x', 
+				new URL('../images/igor-t-3x.jpg', import.meta.url).href + ' 3x'
 				],    
       mobile: [
-				new URL('../images/igor-m-1x.jpg', import.meta.url).href, 
-				new URL('../images/igor-m-2x.jpg', import.meta.url).href, 
-				new URL('../images/igor-m-3x.jpg', import.meta.url).href
+				new URL('../images/igor-m-1x.jpg', import.meta.url).href+ ' 1x', 
+				new URL('../images/igor-m-2x.jpg', import.meta.url).href+ ' 2x', 
+				new URL('../images/igor-m-3x.jpg', import.meta.url).href+ ' 3x'
 					],
+					
 			default: new URL('../images/igor-d-1x.jpg', import.meta.url).href,
       },
 			icons: [
@@ -54,19 +56,19 @@ let dataDevelopersList =
 		position: "Frontend Developer",
 		images: {
       desktop: [
-				new URL('../images/olha-d-1x.jpg', import.meta.url).href, 
-				new URL('../images/olha-d-2x.jpg', import.meta.url).href, 
-				new URL('../images/olha-d-3x.jpg', import.meta.url).href
+				new URL('../images/olha-d-1x.jpg', import.meta.url).href  + ' 1x', 
+				new URL('../images/olha-d-2x.jpg', import.meta.url).href  + ' 2x', 
+				new URL('../images/olha-d-3x.jpg', import.meta.url).href  + ' 3x'
 				],
       tablet: [
-				new URL('../images/olha-t-1x.jpg', import.meta.url).href, 
-				new URL('../images/olha-t-2x.jpg', import.meta.url).href, 
-				new URL('./images/olha-t-3x.jpg', import.meta.url).href
+				new URL('../images/olha-t-1x.jpg', import.meta.url).href  + ' 1x', 
+				new URL('../images/olha-t-2x.jpg', import.meta.url).href  + ' 2x', 
+				new URL('../images/olha-t-3x.jpg', import.meta.url).href  + ' 3x'
 				],    
       mobile: [
-				new URL('../images/olha-m-1x.jpg', import.meta.url).href, 
-				new URL('../images/olha-m-2x.jpg', import.meta.url).href, 
-				new URL('../images/olha-m-3x.jpg', import.meta.url).href
+				new URL('../images/olha-m-1x.jpg', import.meta.url).href  + ' 1x', 
+				new URL('../images/olha-m-2x.jpg', import.meta.url).href  + ' 2x', 
+				new URL('../images/olha-m-3x.jpg', import.meta.url).href  + ' 3x'
 					],
 			default: new URL('../images/olha-d-1x.jpg', import.meta.url).href,
       },
@@ -82,19 +84,19 @@ let dataDevelopersList =
 		position: "Marketing",
 		images: {
       desktop: [
-				new URL('../images/micola-d-1x.jpg', import.meta.url).href, 
-				new URL('../images/micola-d-2x.jpg', import.meta.url).href, 
-				new URL('../images/micola-d-3x.jpg', import.meta.url).href
+				new URL('../images/micola-d-1x.jpg', import.meta.url).href  + ' 1x', 
+				new URL('../images/micola-d-2x.jpg', import.meta.url).href  + ' 2x', 
+				new URL('../images/micola-d-3x.jpg', import.meta.url).href  + ' 3x'
 				],
       tablet: [
-				new URL('../images/micola-t-1x.jpg', import.meta.url).href, 
-				new URL('../images/micola-t-2x.jpg', import.meta.url).href, 
-				new URL('../images/micola-t-3x.jpg', import.meta.url).href
+				new URL('../images/micola-t-1x.jpg', import.meta.url).href  + ' 1x', 
+				new URL('../images/micola-t-2x.jpg', import.meta.url).href  + ' 2x', 
+				new URL('../images/micola-t-3x.jpg', import.meta.url).href  + ' 3x'
 				],    
       mobile: [
-				new URL('../images/micola-m-1x.jpg', import.meta.url).href, 
-				new URL('../images/micola-m-2x.jpg', import.meta.url).href, 
-				new URL('../images/micola-m-3x.jpg', import.meta.url).href
+				new URL('../images/micola-m-1x.jpg', import.meta.url).href  + ' 1x', 
+				new URL('../images/micola-m-2x.jpg', import.meta.url).href  + ' 2x', 
+				new URL('../images/micola-m-3x.jpg', import.meta.url).href  + ' 3x'
 					],
 			default: new URL('../images/micola-d-1x.jpg', import.meta.url).href,
       },
@@ -110,19 +112,19 @@ let dataDevelopersList =
 		position: "Ui Designer",
 		images: {
       desktop: [
-				new URL('../images/mihailo-d-1x.jpg', import.meta.url).href, 
-				new URL('../images/mihailo-d-2x.jpg', import.meta.url).href, 
-				new URL('../images/mihailo-d-3x.jpg', import.meta.url).href
+				new URL('../images/mihailo-d-1x.jpg', import.meta.url).href  + ' 1x', 
+				new URL('../images/mihailo-d-2x.jpg', import.meta.url).href  + ' 2x', 
+				new URL('../images/mihailo-d-3x.jpg', import.meta.url).href  + ' 3x'
 				],
       tablet: [
-				new URL('../images/mihailo-t-1x.jpg', import.meta.url).href, 
-				new URL('../images/mihailo-t-2x.jpg', import.meta.url).href, 
-				new URL('../images/mihailo-t-3x.jpg', import.meta.url).href
+				new URL('../images/mihailo-t-1x.jpg', import.meta.url).href  + ' 1x', 
+				new URL('../images/mihailo-t-2x.jpg', import.meta.url).href  + ' 2x', 
+				new URL('../images/mihailo-t-3x.jpg', import.meta.url).href  + ' 3x'
 				],    
       mobile: [
-				new URL('../images/mihailo-m-1x.jpg', import.meta.url).href, 
-				new URL('../images/mihailo-m-2x.jpg', import.meta.url).href, 
-				new URL('../images/mihailo-m-3x.jpg', import.meta.url).href
+				new URL('../images/mihailo-m-1x.jpg', import.meta.url).href  + ' 1x', 
+				new URL('../images/mihailo-m-2x.jpg', import.meta.url).href  + ' 2x', 
+				new URL('../images/mihailo-m-3x.jpg', import.meta.url).href  + ' 3x'
 					],
 			default: new URL('../images/mihailo-d-1x.jpg', import.meta.url).href,
       },
@@ -134,6 +136,9 @@ let dataDevelopersList =
 			]
 	}
 ];
+
+console.log("1x", dataDevelopersList)
+
 // console.log("dataDevelopersList:", dataDevelopersList[0].images.tablet[1]);
 const developersList = document.querySelector('.team__list');
 
@@ -152,6 +157,20 @@ if(localStorage.getItem('dataDevelopers'))
 	// const jsonDataDevelopersList = ;
 	localStorage.setItem('dataDevelopers', JSON.stringify(dataDevelopersList))
 }
+// //! вирішення задачі з ретинізації 1x 2x 3x
+// function makeSrcSet(images) {
+//     return images
+//         .map((img, index) => `${img} ${index + 1}x`)
+//         .join(', ');
+// }
+
+
+// //! вирішення задачі з ретинізації 1x 2x 3x
+// dataDevelopersList.forEach(dev => {
+//     dev.images.desktopSrcSet = makeSrcSet(dev.images.desktop);
+//     dev.images.tabletSrcSet = makeSrcSet(dev.images.tablet);
+//     dev.images.mobileSrcSet = makeSrcSet(dev.images.mobile);
+// });
 
 // console.log('JSON-дані списку розробників:', jsonDataDevelopersList);
 
