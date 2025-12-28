@@ -17,24 +17,20 @@
       media="(min-width: 768px)" 
     />
     <source 
-        srcset="
-        {{#each images.mobile}}
-          {{this}}
-        {{/each}}
-        " 
+        srcset="{{images.mobileSrcSet}}" 
       media="(min-width: 480px)" 
     />
-    <img class="our-developers-list__img" src="{{images.default}}" alt="{{name}}" />
+    <img class="team__photo" src="{{images.default}}" alt="{{name}}" />
   </picture>
 
 
   <p class="team__text">{{name}}</p>
   <h3 class="team__position">{{position}}</h3>
-  <ul class="our-developers-svg-list">
+  <ul class="team__social-media">
     {{#each icons}}
     <li class="our-developers-svg-list__item">
-      <a class="our-developers-svg-list__link" href="#">
-        <svg width="20" height="20">
+      <a class="team__social-media-icon" href="#">
+        <svg class='team__social-media-icon' width="20" height="20">
           <use href="{{this}}"></use>
         </svg>
       </a>

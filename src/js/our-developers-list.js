@@ -26,29 +26,29 @@ let dataDevelopersList =
 		position: "Product Designer",
 		images: {
       desktop: [
-				new URL('../images/igor-d-1x.jpg', import.meta.url).href  + ' 1x', 
-				new URL('../images/igor-d-2x.jpg', import.meta.url).href  + ' 2x', 
+				new URL('../images/igor-d-1x.jpg', import.meta.url).href  + ' 1x,', 
+				new URL('../images/igor-d-2x.jpg', import.meta.url).href  + ' 2x,', 
 				new URL('../images/igor-d-3x.jpg', import.meta.url).href  + ' 3x'
 				],
       tablet: [
 				//* ./images/igor-t-1x.jpg 1x,
-				new URL('../images/igor-t-1x.jpg', import.meta.url).href + ' 1x', 
-				new URL('../images/igor-t-2x.jpg', import.meta.url).href + ' 2x', 
+				new URL('../images/igor-t-1x.jpg', import.meta.url).href + ' 1x,', 
+				new URL('../images/igor-t-2x.jpg', import.meta.url).href + ' 2x,', 
 				new URL('../images/igor-t-3x.jpg', import.meta.url).href + ' 3x'
 				],    
       mobile: [
-				new URL('../images/igor-m-1x.jpg', import.meta.url).href+ ' 1x', 
-				new URL('../images/igor-m-2x.jpg', import.meta.url).href+ ' 2x', 
-				new URL('../images/igor-m-3x.jpg', import.meta.url).href+ ' 3x'
+				new URL('../images/igor-m-1x.jpg', import.meta.url).href + ' 1x,', 
+				new URL('../images/igor-m-2x.jpg', import.meta.url).href + ' 2x,', 
+				new URL('../images/igor-m-3x.jpg', import.meta.url).href + ' 3x'
 					],
 					
 			default: new URL('../images/igor-d-1x.jpg', import.meta.url).href,
       },
 			icons: [
-				new URL('../images/symboldefs.svg#instagram', import.meta.url).href, 
-				new URL('../images/symboldefs.svg#twitter', import.meta.url).href, 
-				new URL('../images/symboldefs.svg#facebook', import.meta.url).href,
-				new URL('../images/symboldefs.svg#linkedin', import.meta.url).href
+				new URL('../images/symboldefts.svg#instagram', import.meta.url).href, 
+				new URL('../images/symboldefts.svg#twitter', import.meta.url).href, 
+				new URL('../images/symboldefts.svg#facebook', import.meta.url).href,
+				new URL('../images/symboldefts.svg#linkedin', import.meta.url).href
 			]
 	},
 	{
@@ -56,27 +56,27 @@ let dataDevelopersList =
 		position: "Frontend Developer",
 		images: {
       desktop: [
-				new URL('../images/olha-d-1x.jpg', import.meta.url).href  + ' 1x', 
-				new URL('../images/olha-d-2x.jpg', import.meta.url).href  + ' 2x', 
+				new URL('../images/olha-d-1x.jpg', import.meta.url).href  + ' 1x,', 
+				new URL('../images/olha-d-2x.jpg', import.meta.url).href  + ' 2x,', 
 				new URL('../images/olha-d-3x.jpg', import.meta.url).href  + ' 3x'
 				],
       tablet: [
-				new URL('../images/olha-t-1x.jpg', import.meta.url).href  + ' 1x', 
-				new URL('../images/olha-t-2x.jpg', import.meta.url).href  + ' 2x', 
+				new URL('../images/olha-t-1x.jpg', import.meta.url).href  + ' 1x,', 
+				new URL('../images/olha-t-2x.jpg', import.meta.url).href  + ' 2x,', 
 				new URL('../images/olha-t-3x.jpg', import.meta.url).href  + ' 3x'
 				],    
       mobile: [
-				new URL('../images/olha-m-1x.jpg', import.meta.url).href  + ' 1x', 
-				new URL('../images/olha-m-2x.jpg', import.meta.url).href  + ' 2x', 
+				new URL('../images/olha-m-1x.jpg', import.meta.url).href  + ' 1x,', 
+				new URL('../images/olha-m-2x.jpg', import.meta.url).href  + ' 2x,', 
 				new URL('../images/olha-m-3x.jpg', import.meta.url).href  + ' 3x'
 					],
 			default: new URL('../images/olha-d-1x.jpg', import.meta.url).href,
       },
 			icons: [
-				new URL('../images/symboldefs.svg#instagram', import.meta.url).href, 
-				new URL('../images/symboldefs.svg#twitter', import.meta.url).href, 
-				new URL('../images/symboldefs.svg#facebook', import.meta.url).href,
-				new URL('../images/symboldefs.svg#linkedin', import.meta.url).href
+				new URL('../images/symboldefts.svg#instagram', import.meta.url).href, 
+				new URL('../images/symboldefts.svg#twitter', import.meta.url).href, 
+				new URL('../images/symboldefts.svg#facebook', import.meta.url).href,
+				new URL('../images/symboldefts.svg#linkedin', import.meta.url).href
 			]
 	},
 	{
@@ -84,27 +84,27 @@ let dataDevelopersList =
 		position: "Marketing",
 		images: {
       desktop: [
-				new URL('../images/micola-d-1x.jpg', import.meta.url).href  + ' 1x', 
-				new URL('../images/micola-d-2x.jpg', import.meta.url).href  + ' 2x', 
+				new URL('../images/micola-d-1x.jpg', import.meta.url).href  + ' 1x,', 
+				new URL('../images/micola-d-2x.jpg', import.meta.url).href  + ' 2x,', 
 				new URL('../images/micola-d-3x.jpg', import.meta.url).href  + ' 3x'
 				],
       tablet: [
-				new URL('../images/micola-t-1x.jpg', import.meta.url).href  + ' 1x', 
-				new URL('../images/micola-t-2x.jpg', import.meta.url).href  + ' 2x', 
+				new URL('../images/micola-t-1x.jpg', import.meta.url).href  + ' 1x,', 
+				new URL('../images/micola-t-2x.jpg', import.meta.url).href  + ' 2x,', 
 				new URL('../images/micola-t-3x.jpg', import.meta.url).href  + ' 3x'
 				],    
       mobile: [
-				new URL('../images/micola-m-1x.jpg', import.meta.url).href  + ' 1x', 
-				new URL('../images/micola-m-2x.jpg', import.meta.url).href  + ' 2x', 
+				new URL('../images/micola-m-1x.jpg', import.meta.url).href  + ' 1x,', 
+				new URL('../images/micola-m-2x.jpg', import.meta.url).href  + ' 2x,', 
 				new URL('../images/micola-m-3x.jpg', import.meta.url).href  + ' 3x'
 					],
 			default: new URL('../images/micola-d-1x.jpg', import.meta.url).href,
       },
 			icons: [
-				new URL('../images/symboldefs.svg#instagram', import.meta.url).href, 
-				new URL('../images/symboldefs.svg#twitter', import.meta.url).href, 
-				new URL('../images/symboldefs.svg#facebook', import.meta.url).href,
-				new URL('../images/symboldefs.svg#linkedin', import.meta.url).href
+				new URL('../images/symboldefts.svg#instagram', import.meta.url).href, 
+				new URL('../images/symboldefts.svg#twitter', import.meta.url).href, 
+				new URL('../images/symboldefts.svg#facebook', import.meta.url).href,
+				new URL('../images/symboldefts.svg#linkedin', import.meta.url).href
 			]
 	},
 	{
@@ -112,32 +112,31 @@ let dataDevelopersList =
 		position: "Ui Designer",
 		images: {
       desktop: [
-				new URL('../images/mihailo-d-1x.jpg', import.meta.url).href  + ' 1x', 
-				new URL('../images/mihailo-d-2x.jpg', import.meta.url).href  + ' 2x', 
+				new URL('../images/mihailo-d-1x.jpg', import.meta.url).href  + ' 1x,', 
+				new URL('../images/mihailo-d-2x.jpg', import.meta.url).href  + ' 2x,', 
 				new URL('../images/mihailo-d-3x.jpg', import.meta.url).href  + ' 3x'
 				],
       tablet: [
-				new URL('../images/mihailo-t-1x.jpg', import.meta.url).href  + ' 1x', 
-				new URL('../images/mihailo-t-2x.jpg', import.meta.url).href  + ' 2x', 
+				new URL('../images/mihailo-t-1x.jpg', import.meta.url).href  + ' 1x,', 
+				new URL('../images/mihailo-t-2x.jpg', import.meta.url).href  + ' 2x,', 
 				new URL('../images/mihailo-t-3x.jpg', import.meta.url).href  + ' 3x'
 				],    
       mobile: [
-				new URL('../images/mihailo-m-1x.jpg', import.meta.url).href  + ' 1x', 
-				new URL('../images/mihailo-m-2x.jpg', import.meta.url).href  + ' 2x', 
+				new URL('../images/mihailo-m-1x.jpg', import.meta.url).href  + ' 1x,', 
+				new URL('../images/mihailo-m-2x.jpg', import.meta.url).href  + ' 2x,', 
 				new URL('../images/mihailo-m-3x.jpg', import.meta.url).href  + ' 3x'
 					],
 			default: new URL('../images/mihailo-d-1x.jpg', import.meta.url).href,
       },
 			icons: [
-				new URL('../images/symboldefs.svg#instagram', import.meta.url).href, 
-				new URL('../images/symboldefs.svg#twitter', import.meta.url).href, 
-				new URL('../images/symboldefs.svg#facebook', import.meta.url).href,
-				new URL('../images/symboldefs.svg#linkedin', import.meta.url).href
+				new URL('../images/symboldefts.svg#instagram', import.meta.url).href, 
+				new URL('../images/symboldefts.svg#twitter', import.meta.url).href, 
+				new URL('../images/symboldefts.svg#facebook', import.meta.url).href,
+				new URL('../images/symboldefts.svg#linkedin', import.meta.url).href
 			]
 	}
 ];
 
-console.log("1x", dataDevelopersList)
 
 // console.log("dataDevelopersList:", dataDevelopersList[0].images.tablet[1]);
 const developersList = document.querySelector('.team__list');
@@ -246,4 +245,4 @@ developersList.innerHTML = markup;
 
 console.log('Наші розробники:', dataDevelopersList);
 
-console.log('Розмітка списку розробників:', markup);
+// console.log('Розмітка списку розробників:', markup);
